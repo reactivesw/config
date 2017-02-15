@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/reactivesw/config.svg?branch=master)](https://travis-ci.org/reactivesw/config)
 # 1, Name
 Config service
 
