@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: config-service
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: config-service
+    spec:
+      containers:
+      - name: config-service
+        image: reactivesw/config:0.0.1
+        ports:
+        - containerPort: 8888
+        env:
+        - name: spring_cloud_config_server_git_username
+          valueFrom:
+            secretKeyRef:
+              name: reactivesw-secret
+              key: github.username
+        - name: spring_cloud_config_server_git_password
+          valueFrom:
+            secretKeyRef:
+              name: reactivesw-secret
+              key: github.password

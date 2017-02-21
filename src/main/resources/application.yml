@@ -6,6 +6,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/umasuo/config-files
-          username:
-          password:
+          uri: https://github.com/reactivesw/config-files
