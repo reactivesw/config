@@ -13,6 +13,7 @@ buildscript {
 
 //for spring boot
 apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
 //for spring cloud
 apply plugin: "io.spring.dependency-management"
 
@@ -30,7 +31,7 @@ dependencyManagement {
 
 dependencies {
     compile("org.springframework.cloud:spring-cloud-config-server")
-    compile("org.springframework.cloud:spring-cloud-starter-bus-kafka")
+//    compile("org.springframework.cloud:spring-cloud-starter-bus-kafka")
 
     //spring boot test
     testCompile('org.springframework.boot:spring-boot-starter-test:1.4.0.RELEASE')

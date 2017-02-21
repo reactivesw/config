@@ -6,6 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/umasuo/test-config-repo
-          username: ourusername
-          password: ourpassword
+          uri: https://github.com/umasuo/config-files
+          username: liuquan89@gmail.com
+          password: liu37211322quan
