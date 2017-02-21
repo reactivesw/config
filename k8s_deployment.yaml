@@ -12,6 +12,7 @@ spec:
       containers:
       - name: config-service
         image: reactivesw/config:0.0.1
+        imagePullPolicy: Always
         ports:
         - containerPort: 8888
         env:
@@ -25,3 +26,5 @@ spec:
             secretKeyRef:
               name: reactivesw-secret
               key: github.password
+        - name: spring_cloud_config_server_git_password
+          value: https://github.com/reactivesw/config-files
