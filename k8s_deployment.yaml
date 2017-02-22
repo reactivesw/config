@@ -28,5 +28,5 @@ spec:
               key: github.password
         - name: spring_cloud_config_server_git_uri
           value: https://github.com/reactivesw/config-files
-        － name: server_port
-           value: "80"
+        - name: server_port
+          value: "80"
