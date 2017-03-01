@@ -7,6 +7,7 @@ spring:
       server:
         git:
           uri: https://github.com/reactivesw/config-files
-          username: b
-          password: a
+          username: a
+          password: b
           force-pull: true
+
