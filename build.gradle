@@ -32,18 +32,6 @@ dependencyManagement {
 
 dependencies {
     compile("org.springframework.cloud:spring-cloud-config-server")
-
-    //spring boot test
-    testCompile('org.springframework.boot:spring-boot-starter-test:1.4.0.RELEASE')
-
-    //groovy for spock
-    testCompile('org.codehaus.groovy:groovy-all:2.4.1')
-
-    //spock core
-    testCompile('org.spockframework:spock-core:1.0-groovy-2.4')
-
-    //spock spring
-    testCompile('org.spockframework:spock-spring:1.0-groovy-2.4')
 }
 
 jar {
